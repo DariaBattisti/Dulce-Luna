@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inicio | Dulce Luna</title>
+
+    <link rel="stylesheet" href="estilos.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- PANTALLA DE ERROR 404 -->
+    <section id="pantallaError" class="pantalla-error">
+
+        <div>
+            <p>ARCHIVO NO ENCONTRADO</p>
+
+            <h1 class="glitch" data-text="ERROR 404">
+                ERROR 404
+            </h1>
+
+            <p>Dulce Luna ha desaparecido de Internet.</p>
+
+            <p>«Desaparecimos de la red, no de tus recuerdos».</p>
+
+            <button id="botonRecuperar" type="button">
+                Restaurar sitio
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <div id="contenido" hidden>
+
+        <!-- ENCABEZADO Y NAVEGACIÓN -->
+        <header>
+
+            <nav class="contenedor navegacion">
+
+                <a href="index.html">
+                    <img
+                        class="logo"
+                        src="imagenes/dulcelunalogo.png"
+                        alt="Dulce Luna"
+                    >
+                </a>
+
+                <ul>
+                    <li>
+                        <button id="modoOscuro" type="button">
+                            Modo oscuro
+                        </button>
+                    </li>
+
+                    <li>
+                        <a href="index.html" aria-current="page">Inicio</a>
+                    </li>
+
+                    <li>
+                        <a href="servicios.html">Servicios</a>
+                    </li>
+
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+        </header>
+
+
+        <main>
+
+            <!-- BIENVENIDA -->
+            <section class="bienvenida">
+
+                <div class="contenedor bienvenida-grid">
+
+                    <div>
+                        <p class="etiqueta">
+                            REPOSTERÍA ARTESANAL · SANTO DOMINGO
+                        </p>
+
+                        <h1>Dulce <span>Luna</span></h1>
+
+                        <h2>Mismo sabor, nuevo comienzo.</h2>
+
+                        <p>
+                            Regresamos con tus bizcochos y postres favoritos.
+                        </p>
+
+                        <a class="boton" href="servicios.html">
+                            Ver postres
+                        </a>
+                    </div>
+
+                    <img
+                        class="portada"
+                        src="imagenes/portada.jpg"
+                        alt="Bizcocho decorado"
+                    >
+
+                </div>
+
+            </section>
+
+
+            <!-- HISTORIA DE LA DESAPARICIÓN -->
+            <section class="contenedor seccion">
+
+                <p class="etiqueta">EXPEDIENTE DL-404</p>
+
+                <h2>¿Qué pasó con Dulce Luna?</h2>
+
+                <div class="tarjeta">
+
+                    <p>
+                        Una mañana, nuestra página y redes sociales
+                        desaparecieron sin explicación.
+                    </p>
+
+                    <p>
+                        Encontramos una memoria USB con un mensaje:
+                        «Si quieres recuperar tu negocio, deberás reinventarlo».
+                    </p>
+
+                    <p>
+                        Así comenzó nuestro regreso, con una nueva página
+                        y un catálogo digital.
+                    </p>
+
+                    <a href="contacto.html#evidencias">
+                        Ver las pistas del incidente
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- NOVEDADES -->
+            <section class="seccion fondo-lavanda">
+
+                <div class="contenedor">
+
+                    <h2>Un nuevo comienzo</h2>
+
+                    <div class="tarjetas">
+
+                        <!-- POSTRES -->
+                        <article class="tarjeta">
+
+                            <h3>Postres artesanales</h3>
+
+                            <p>
+                                Bizcochos, brownies y cupcakes.
+                            </p>
+
+                        </article>
+
+
+                        <!-- PEDIDOS -->
+                        <article class="tarjeta">
+
+                            <h3>Pedidos personalizados</h3>
+
+                            <p>
+                                Postres para tus celebraciones.
+                            </p>
+
+                        </article>
+
+
+                        <!-- ATENCIÓN -->
+                        <article class="tarjeta">
+
+                            <h3>Atención en línea</h3>
+
+                            <p>
+                                Consulta nuestro catálogo y escríbenos.
+                            </p>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- PIE DE PÁGINA -->
+        <footer>
+            <p>© 2026 Dulce Luna</p>
+        </footer>
+
+
+        <!-- CHATBOT DULCEBOT -->
+        <div class="chat">
+
+            <div id="chatPanel" class="chat-panel" hidden>
+
+                <h3>DulceBot</h3>
+
+                <p>
+                    ¡Hola! Soy DulceBot. ¿En qué puedo ayudarte hoy?
+                </p>
+
+                <p id="respuestaBot"></p>
+
+                <form id="chatForm">
+
+                    <input
+                        id="pregunta"
+                        aria-label="Pregunta para DulceBot"
+                        required
+                        placeholder="Escribe tu pregunta"
+                    >
+
+                    <button type="submit">
+                        Enviar
+                    </button>
+
+                </form>
+
+            </div>
+
+            <button id="chatBoton" type="button">
+                DulceBot
+            </button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+

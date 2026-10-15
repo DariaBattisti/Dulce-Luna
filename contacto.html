@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contacto | Dulce Luna</title>
+
+    <link rel="stylesheet" href="estilos.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO Y NAVEGACIÓN -->
+    <header>
+
+        <nav class="contenedor navegacion">
+
+            <a href="index.html">
+                <img
+                    class="logo"
+                    src="imagenes/dulcelunalogo.png"
+                    alt="Dulce Luna"
+                >
+            </a>
+
+            <ul>
+                <li>
+                    <button id="modoOscuro" type="button">
+                        Modo oscuro
+                    </button>
+                </li>
+
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="servicios.html">Servicios</a>
+                </li>
+
+                <li>
+                    <a href="contacto.html" aria-current="page">
+                        Contacto
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- CABECERA -->
+        <section class="cabecera">
+
+            <div class="contenedor">
+                <h1>Contáctanos</h1>
+
+                <p>
+                    Estamos aquí para ayudarte con tu pedido.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- FORMULARIO DE CONTACTO -->
+        <section class="contenedor seccion" id="formulario">
+
+            <div class="contacto-grid">
+
+                <!-- INFORMACIÓN DE CONTACTO -->
+                <div>
+
+                    <h2>Escríbenos</h2>
+
+                    <p>
+                        <strong>Ubicación:</strong> Santo Domingo
+                    </p>
+
+                    <p>
+                        <strong>Horario:</strong> lunes a sábado,
+                        9:00 a. m. a 6:00 p. m.
+                    </p>
+
+                    <p>
+                        Completa el formulario para dejarnos tu consulta.
+                    </p>
+
+                </div>
+
+
+                <!-- FORMULARIO -->
+                <form class="tarjeta formulario" id="contactoForm">
+
+                    <label for="nombre">Nombre</label>
+                    <input
+                        id="nombre"
+                        name="nombre"
+                        required
+                    >
+
+                    <label for="correo">Correo electrónico</label>
+                    <input
+                        id="correo"
+                        name="correo"
+                        type="email"
+                        required
+                    >
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="5"
+                        required
+                    ></textarea>
+
+                    <button type="submit">
+                        Enviar
+                    </button>
+
+                    <p id="respuestaFormulario" role="status"></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- EVIDENCIAS DEL INCIDENTE -->
+        <section class="seccion fondo-lavanda" id="evidencias">
+
+            <div class="contenedor">
+
+                <h2>Las pistas del incidente</h2>
+
+                <div class="tarjetas">
+
+                    <!-- MEMORIA USB -->
+                    <article class="tarjeta">
+
+                        <h3>Memoria USB</h3>
+
+                        <p>
+                            «Si quieres recuperar tu negocio,
+                            deberás reinventarlo».
+                        </p>
+
+                    </article>
+
+
+                    <!-- ARCHIVOS PERDIDOS -->
+                    <article class="tarjeta">
+
+                        <h3>Archivos perdidos</h3>
+
+                        <p>
+                            La web, el catálogo y las redes
+                            dejaron de estar disponibles.
+                        </p>
+
+                    </article>
+
+
+                    <!-- RECUPERACIÓN -->
+                    <article class="tarjeta">
+
+                        <h3>Recuperación</h3>
+
+                        <p>
+                            Reconstruimos la página y volvimos
+                            a presentar nuestros postres.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA Y EASTER EGG -->
+    <footer>
+
+        <p>
+            © 2026 Dulce Luna ·
+            <a
+                class="secreto"
+                href="secreto.html"
+                title="¿Qué estás mirando?"
+                aria-label="Descubrir secreto"
+            >👀</a>
+        </p>
+
+    </footer>
+
+
+    <!-- CHATBOT DULCEBOT -->
+    <div class="chat">
+
+        <div id="chatPanel" class="chat-panel" hidden>
+
+            <h3>DulceBot</h3>
+
+            <p>
+                ¡Hola! Soy DulceBot. ¿En qué puedo ayudarte hoy?
+            </p>
+
+            <p id="respuestaBot"></p>
+
+            <form id="chatForm">
+
+                <input
+                    id="pregunta"
+                    aria-label="Pregunta para DulceBot"
+                    required
+                    placeholder="Escribe tu pregunta"
+                >
+
+                <button type="submit">
+                    Enviar
+                </button>
+
+            </form>
+
+        </div>
+
+        <button id="chatBoton" type="button">
+            DulceBot
+        </button>
+
+    </div>
+
+</body>
+</html>
